@@ -61,4 +61,4 @@ examples/build.js
 # Mac
 .DS_Store
 
-.vscode
+.vscode/
