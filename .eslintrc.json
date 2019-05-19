@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "airbnb-base",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "no-console": "warn",
+    "no-const-assign": "error",
+    "no-underscore-dangle": "off",
+    "no-invalid-this": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-commonjs": "off",
+    "react/prop-types": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-handler-names": "off",
+    "react/no-multi-comp": "off",
+    "react-native/split-platform-components": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "react/prefer-stateless-function": "off",
+    "react-native/no-inline-styles": "off",
+    "react/display-name": "off",
+    "no-loop-func": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false,
+        "useTabs": true,
+        "trailingComma": "all"
+      }
+    ]
+  }
+}

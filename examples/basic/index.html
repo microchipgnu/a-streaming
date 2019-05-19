@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <script src="js/canvasFill.js"></script> -->
+    <script src="../js/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="../build.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity environment="preset: egypt; groundColor: #445;"></a-entity>
+
+      <a-entity
+        id="rig"
+        position="0 0 5"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"
+        streaming
+      >
+        <a-camera id="camera1" streaming></a-camera>
+      </a-entity>
+
+      <a-box id="box1" color="#4CC3D9" shadow> </a-box>
+    </a-scene>
+
+    <script>
+      const cam1 = document.getElementById('camera1')
+
+      function start() {
+        cam1.emit('startstreaming')
+      }
+    </script>
+  </body>
+</html>
